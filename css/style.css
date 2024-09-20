@@ -1,0 +1,77 @@
+/* Set font style and text color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222; 
+  }
+  
+  /* Center the site heading of the  text */
+  .siteheader {
+    text-align: center;
+    margin: 1rem 0; /* Add some space above and below the header */
+  }
+  
+  /* Center the main content container */
+  main {
+    display: flex;
+    justify-content: center; /* Horizontally center the main content */
+  }
+  
+  /* Create a grid layout for the emoji cards */
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout for the cards */
+    gap: 20px; /* Add space between the cards */
+    max-width: 1200px; /* Set a maximum width for the container */
+    padding: 1.5rem; /* Add padding inside the container */
+  }
+  
+  /* Style for individual emoji cards */
+  .emoji {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: space-between; /* Ensure even spacing between elements */
+    border: 1px solid #222; /* Add a dark border around the card */
+    border-radius: 8px; /* Round the card corners */
+    padding: 1rem; /* Add space inside the card */
+    background-color: white; /* White background for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Style the heading inside each emoji card */
+  .emoji h2 {
+    margin: 0; 
+    border-bottom: 2px solid #ccc; /* Add a grey border below the heading */
+    padding-bottom: 0.5rem; /* Add space below the heading text */
+  }
+  
+  /* Style the paragraph text inside each emoji card */
+  .emoji p {
+    flex-grow: 1; /* Allow the paragraph to take up remaining space */
+    margin: 1rem 0; /* Add space above and below the paragraph */
+  }
+  
+  /* Style for the emoji icon */
+  .icon {
+    font-size: 4rem; /* Increase the size of the emoji icon */
+    text-align: center; /* Center the emoji icon */
+    margin: 1rem 0; /* Add space above and below the emoji icon */
+  }
+  
+  /* Style for the 'Read More' button */
+  .emoji a {
+    text-decoration: none; /* Remove underline from the link */
+    background-color: #781BAA; /* Purple background for the button */
+    color: white; /* White text color */
+    padding: 0.75rem; /* Add space inside the button */
+    border-radius: 8px; /* Round the button corners */
+    text-align: center; /* Center the text inside the button */
+  }
+  
+  /* Ensure the button stays at the bottom of the card */
+  .emoji a {
+    margin-top: auto; /* Push the button to the bottom */
+    align-self: center; /* Horizontally center the button */
+    width: 100%; /* Make the button take up full width */
+    text-align: center; /* Center the text inside the button */
+  }
+  
