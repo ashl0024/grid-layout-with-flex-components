@@ -39,6 +39,7 @@ body {
   
   /* Style the heading inside each emoji card */
   .emoji h2 {
+    order: 2;
     margin: 0; 
     border-bottom: 2px solid #ccc; /* Add a grey border below the heading */
     padding-bottom: 0.5rem; /* Add space below the heading text */
@@ -46,12 +47,14 @@ body {
   
   /* Style the paragraph text inside each emoji card */
   .emoji p {
+    order: 3;
     flex-grow: 1; /* Allow the paragraph to take up remaining space */
     margin: 1rem 0; /* Add space above and below the paragraph */
   }
   
   /* Style for the emoji icon */
   .icon {
+    order: 1;
     font-size: 4rem; /* Increase the size of the emoji icon */
     text-align: center; /* Center the emoji icon */
     margin: 1rem 0; /* Add space above and below the emoji icon */
@@ -59,6 +62,7 @@ body {
   
   /* Style for the 'Read More' button */
   .emoji a {
+    order: 4;
     text-decoration: none; /* Remove underline from the link */
     background-color: #781BAA; /* Purple background for the button */
     color: white; /* White text color */
